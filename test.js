@@ -1,6 +1,6 @@
-function show() {
-  document.getElementsByClassName("siide")[0].style.display = "flex";
+function ossama() {
+  document.getElementsByClassName("siide")[0].classList.toggle("hid");
 }
-function hid() {
-  document.getElementsByClassName("siide")[0].style.display = "none";
+function youness() {
+  document.getElementsByClassName("cart")[0].classList.toggle("suprimer");
 }

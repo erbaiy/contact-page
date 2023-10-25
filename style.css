@@ -96,9 +96,10 @@ label {
   position: relative;
 }
 
-#navbar {
-  display: none;
+.cart {
+  display: flex;
   position: absolute;
+  flex-wrap: wrap;
   top: 100%;
   right: 0;
   margin-right: 20px;
@@ -107,9 +108,7 @@ label {
   width: 500px;
   transition: 0.3s;
 }
-.icon-container:hover #navbar {
-  display: block;
-}
+
 .last_section {
   margin-right: 20px;
 }
@@ -130,9 +129,9 @@ label {
   background-color: black;
   margin-bottom: 3px;
 }
-.exit {
+/* .exit {
   display: none;
-}
+} */
 .amazon {
   display: none;
 }
@@ -148,9 +147,6 @@ label {
     display: flex;
     color: aliceblue;
   }
-  .right-section > ul:hover .botton {
-    display: flex;
-  }
 
   .form input {
     width: 160px;
@@ -158,14 +154,14 @@ label {
     margin-left: -4px;
   }
   .right-section > ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
     height: calc(100% - 70px);
     position: fixed;
     left: 10px;
-    top: 20px;
+    top: 52px;
     background-color: #060605f2;
     color: white;
     transition: 0.3s;
@@ -177,17 +173,12 @@ label {
     padding-top: 20px;
   }
 
-  .botton:hover {
-    display: flex;
-  }
-  #navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 400px;
-    height: 100vh;
-    background-color: white;
+  .cart {
+    width: 327px;
+    /* height: 83vh; */
+
     border: 1px rgba(0, 0, 0, 0.285) solid;
+    font-size: xx-small;
   }
   .part1 {
     width: 90%;
@@ -227,6 +218,9 @@ label {
     background-color: rgba(137, 43, 226, 0.313);
   }
 }
+.hid {
+  display: none !important;
+}
 footer {
   background-color: rgb(48, 45, 51);
   color: beige;
@@ -243,4 +237,7 @@ footer a {
 footer span {
   color: rgba(250, 235, 215, 0.637);
   padding-top: 20px;
+}
+.suprimer {
+  display: none;
 }
